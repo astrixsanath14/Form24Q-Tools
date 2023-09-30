@@ -1,0 +1,19 @@
+detecting proxies
+proxy type: HTTP
+proxy hostname: Smart-webp.nsdl.co.in
+proxy port: 8080
+onlineservices.tin.egov-nsdl.com
+the proxy validator is true
+detecting proxies
+proxy type: HTTP
+proxy hostname: Smart-webp.nsdl.co.in
+proxy port: 8080
+onlineservices.tin.egov-nsdl.com
+--result--7.2^2.168^2.1300
+FVU_Electronic_after2010117.2
+FVU_Electronic_before2010112.168
+FVU_Paper2.1300
+FVU path: \\nsdlfs\TIN_TDS\RPU 3.8, FVU 7.3, 2.169, 1.3001\92C section code testing\24Q\1\24QRQ2.err
+--TO CHECK FVU VERSION-- 4.5
+Inside RPU func
+Inside RPU func 1

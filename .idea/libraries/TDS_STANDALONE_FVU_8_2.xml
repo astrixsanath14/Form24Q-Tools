@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="TDS_STANDALONE_FVU_8.2">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/deps/FVU/TDS_STANDALONE_FVU_8.2/TDS_STANDALONE_FVU_8.2.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

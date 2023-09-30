@@ -1,0 +1,15 @@
+detecting proxies
+proxy type: DIRECT
+No Proxy
+onlineservices.tin.egov-nsdl.com
+the proxy validator is true
+detecting proxies
+proxy type: DIRECT
+No Proxy
+onlineservices.tin.egov-nsdl.com
+--result--7.5^2.171^2.1303
+FVU_Electronic_after2010117.5
+FVU_Electronic_before2010112.171
+FVU_Paper2.1303
+the btnbrowseErrorFilePath is javax.swing.JButton[,0,0,0x0,invalid,alignmentX=0.0,alignmentY=0.5,border=com.apple.laf.AquaButtonBorder$Dynamic@53b32d7,flags=288,maximumSize=,minimumSize=,preferredSize=java.awt.Dimension[width=84,height=25],defaultIcon=,disabledIcon=,disabledSelectedIcon=,margin=javax.swing.plaf.InsetsUIResource[top=0,left=2,bottom=0,right=2],paintBorder=true,paintFocus=true,pressedIcon=,rolloverEnabled=false,rolloverIcon=,rolloverSelectedIcon=,selectedIcon=,text=Browse,defaultCapable=true]
+the errorFileName is /Users/sanath-10401/Documents/z/Form24Q - Analysis/Cx_Data for FVU/FVUGen3/Output/Form.errthe hashFileName is /Users/sanath-10401/Documents/z/Form24Q - Analysis/Cx_Data for FVU/FVUGen3/Output/Form.fvuthe htmlErrorFileName/Users/sanath-10401/Documents/z/Form24Q - Analysis/Cx_Data for FVU/FVUGen3/Output/Formerr.html

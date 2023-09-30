@@ -1,0 +1,29 @@
+detecting proxies
+proxy type: DIRECT
+No Proxy
+onlineservices.tin.egov-nsdl.com
+java.net.UnknownHostException: onlineservices.tin.egov-nsdl.com
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:184)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at sun.security.ssl.SSLSocketImpl.connect(SSLSocketImpl.java:673)
+	at sun.security.ssl.BaseSSLSocketImpl.connect(BaseSSLSocketImpl.java:173)
+	at sun.net.NetworkClient.doConnect(NetworkClient.java:180)
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:463)
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:558)
+	at sun.net.www.protocol.https.HttpsClient.<init>(HttpsClient.java:264)
+	at sun.net.www.protocol.https.HttpsClient.New(HttpsClient.java:367)
+	at sun.net.www.protocol.https.AbstractDelegateHttpsURLConnection.getNewHttpClient(AbstractDelegateHttpsURLConnection.java:191)
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect0(HttpURLConnection.java:1156)
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:1050)
+	at sun.net.www.protocol.https.AbstractDelegateHttpsURLConnection.connect(AbstractDelegateHttpsURLConnection.java:177)
+	at sun.net.www.protocol.http.HttpURLConnection.getOutputStream0(HttpURLConnection.java:1334)
+	at sun.net.www.protocol.http.HttpURLConnection.getOutputStream(HttpURLConnection.java:1309)
+	at sun.net.www.protocol.https.HttpsURLConnectionImpl.getOutputStream(HttpsURLConnectionImpl.java:259)
+	at com.tin.tds.ProxyValidator.VersionVal1(ProxyValidator.java:135)
+	at com.tin.FVU.FVU.h(ab:1890)
+	at com.tin.FVU.FVU.main(ab:2069)
+inside proxy validator
+the proxy validator is false
+the btnbrowseErrorFilePath is javax.swing.JButton[,0,0,0x0,invalid,alignmentX=0.0,alignmentY=0.5,border=com.apple.laf.AquaButtonBorder$Dynamic@7b1d7fff,flags=288,maximumSize=,minimumSize=,preferredSize=java.awt.Dimension[width=84,height=25],defaultIcon=,disabledIcon=,disabledSelectedIcon=,margin=javax.swing.plaf.InsetsUIResource[top=0,left=2,bottom=0,right=2],paintBorder=true,paintFocus=true,pressedIcon=,rolloverEnabled=false,rolloverIcon=,rolloverSelectedIcon=,selectedIcon=,text=Browse,defaultCapable=true]
+the errorFileName is /Users/sanath-10401/Documents/z/Form24Q - Analysis/Cx_Data for FVU/Yuvaraj Anna/2/Output/Form24Q.errthe hashFileName is /Users/sanath-10401/Documents/z/Form24Q - Analysis/Cx_Data for FVU/Yuvaraj Anna/2/Output/Form24Q.fvuthe htmlErrorFileName/Users/sanath-10401/Documents/z/Form24Q - Analysis/Cx_Data for FVU/Yuvaraj Anna/2/Output/Form24Qerr.html
