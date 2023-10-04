@@ -1,6 +1,4 @@
-package thread.tools;
-
-import form24q.FVUGenerator;
+package util;
 
 public class ThreadInterrupter
 {
@@ -23,7 +21,7 @@ public class ThreadInterrupter
 		int threadInterruptAttempt = 0;
 		while (isThreadStillActive() && threadInterruptAttempt++ < MAX_LIMIT_COUNT_FOR_THREAD_INTERRUPT)
 		{
-			System.out.println("Interrupting thread: " + thread.getId() + " threadInterruptAttempt: " + threadInterruptAttempt + " at " + FVUGenerator.getCurrFormattedTime());
+			System.out.println("Interrupting thread: " + thread.getId() + " threadInterruptAttempt: " + threadInterruptAttempt + " at " + DateUtil.getCurrFormattedTime());
 			thread.interrupt();
 			try
 			{
@@ -37,7 +35,7 @@ public class ThreadInterrupter
 		boolean processCompleted = !isThreadStillActive();
 		if (!processCompleted)
 		{
-			System.out.println("WARNING!!! Going to stop thread: " + thread.getId() + " at " + FVUGenerator.getCurrFormattedTime());
+			System.out.println("WARNING!!! Going to stop thread: " + thread.getId() + " at " + DateUtil.getCurrFormattedTime());
 			try
 			{
 				thread.stop();

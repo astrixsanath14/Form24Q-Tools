@@ -2,9 +2,7 @@ package form24q;
 
 import java.io.File;
 import java.io.PrintStream;
-import java.text.SimpleDateFormat;
 import java.util.Arrays;
-import java.util.Calendar;
 import java.util.Timer;
 import java.util.concurrent.Callable;
 import java.util.concurrent.ExecutionException;
@@ -16,8 +14,9 @@ import java.util.concurrent.TimeoutException;
 
 import form24q.util.Form24QConstants;
 import form24q.util.Form24QUtil;
-import thread.tools.ThreadInterrupter;
-import thread.tools.TimeOutTask;
+import util.DateUtil;
+import util.ThreadInterrupter;
+import util.TimeOutTask;
 
 /**
  * In order to update FVU version, change the dependency in Form24Q Tools.iml file and remake the project.
@@ -90,7 +89,7 @@ public class FVUGenerator
 
 	private static void testFVUGenWithFVUInterruptTask(String[] params) throws ExecutionException, InterruptedException
 	{
-		System.out.println("testFVUGenWithFVUInterruptTask:::START::: " + form24q.FVUGenerator.getCurrFormattedTime());
+		System.out.println("testFVUGenWithFVUInterruptTask:::START::: " + DateUtil.getCurrFormattedTime());
 		PrintStream stdout = System.out;
 		PrintStream stderr = System.err;
 		Thread thread = new Thread(() -> {
@@ -115,7 +114,7 @@ public class FVUGenerator
 		System.out.println("processCompleted = " + processCompleted);
 		System.out.println("Completed Interruption..");
 		executorService.shutdown();
-		System.out.println("testFVUGenWithFVUInterruptTask:::END::: " + form24q.FVUGenerator.getCurrFormattedTime());
+		System.out.println("testFVUGenWithFVUInterruptTask:::END::: " + DateUtil.getCurrFormattedTime());
 	}
 
 	private static void testFVUGenWithTimerTask(String[] params) throws InterruptedException, TimeoutException, ExecutionException
@@ -177,14 +176,6 @@ public class FVUGenerator
 	private static void testFVUGenWithGUI(String[] params)
 	{
 		FVU.main(params);
-	}
-
-	public static String getCurrFormattedTime()
-	{
-		Calendar cal = Calendar.getInstance();
-		cal.setTimeInMillis(System.currentTimeMillis());
-		SimpleDateFormat dateFormat = new SimpleDateFormat("MM.dd.yyyy HH:mm:ss:SS");
-		return dateFormat.format(cal.getTimeInMillis());
 	}
 
 	private static class FVUGeneratorTask implements Callable
